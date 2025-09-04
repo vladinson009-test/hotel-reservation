@@ -1,0 +1,4 @@
+- vladinson009 takes the role of Questioner.
+- vladinson009 takes the role of Offerer.
+- vladinson009 takes the role of Admin.
+- vladinson009 takes the role of Verifier.

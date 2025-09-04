@@ -40,7 +40,7 @@ document
 function showThanksPage(e) {
   e.preventDefault();
   changeContent('thank-you-content');
-
+}
 document
   .querySelector('#guest-details-back-btn')
   .addEventListener('click', (e) => fillRoomForm(e));
@@ -91,8 +91,7 @@ function fillConfirmReservationData(customReservation) {
   document.querySelector(
     '.confirm-reservation #guest-data-out'
   ).textContent = `Date-out: ${customReservation.endDate}`;
-
-
+}
 document
   .querySelector('#search-back-btn')
   .addEventListener('click', (e) => fillSearchForm(e));
@@ -137,7 +136,8 @@ function findRoom(e) {
   console.log(reservation);
   changeContent('guest-details-form-content');
 
-changeContent('search-form-content');
+  changeContent('search-form-content');
+}
 document
   .querySelector('#search-form-button')
   .addEventListener('click', (e) => searchFormData(e));
@@ -148,6 +148,7 @@ function searchFormData(e) {
   const checkIn = data.querySelector('#check-in').value;
   const checkOut = data.querySelector('#check-out').value;
   const people = data.querySelector('#people').value;
+
   if (
     checkIn != '' &&
     checkOut != '' &&
@@ -160,4 +161,4 @@ function searchFormData(e) {
     console.log(reservation);
     changeContent('search-result-form-content');
   }
-
+}

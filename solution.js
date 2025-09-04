@@ -40,7 +40,6 @@ document
 function showThanksPage(e) {
   e.preventDefault();
   changeContent('thank-you-content');
-=======
 
 document
   .querySelector('#guest-details-back-btn')
